@@ -1,0 +1,1826 @@
+.bymu-save-settings-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 18px 64px;
+	font-size: 20px;
+	line-height: 1.2;
+	height: auto;
+	border-radius: 10px;
+	white-space: nowrap;
+}
+
+.bymu-save-settings-btn .dashicons {
+	font-size: 22px;
+	height: 22px;
+	width: 22px;
+	margin: 0;
+}
+
+.bymu-ai-prompt {
+	font-family: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 170px;
+	line-height: 1.6;
+	padding: 18px 20px;
+	box-sizing: border-box;
+	resize: vertical;
+	border: 1px solid #dfe7f5;
+	border-radius: 14px;
+	background: #f8fafc;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+	color: var(--bymu-text-primary);
+}
+
+.bymu-ai-prompt:focus {
+	outline: none;
+	border-color: var(--bymu-primary);
+	background: #fff;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+/* wp-bulk-seo-meta-updater-plugin/bulk-yoast-meta-updater/assets/css/admin.css */
+
+@charset "UTF-8";
+
+/*
+████████████████████████████████████████████████████████████
+█ BULK YOAST META UPDATER - PROFESSIONAL ADMIN CSS
+█ Clean, Compact, Consistent Design
+████████████████████████████████████████████████████████████
+*/
+
+/*
+█ 1. CSS VARIABLES
+████████████████████████████████████████████████████████████
+*/
+
+:root {
+	/* Gravity-style palette */
+	--bymu-primary: #2563eb;
+	--bymu-primary-dark: #1e4fd1;
+	--bymu-primary-light: #e4edff;
+	--bymu-accent: #0f172a;
+	--bymu-surface: #ffffff;
+	--bymu-page-bg: #f6f8fb;
+	
+	/* Semantic Colors */
+	--bymu-success: #00aa63;
+	--bymu-warning: #f18200;
+	--bymu-error: #df2a4a;
+	--bymu-info: #005ae0;
+	
+	/* Text Colors */
+	--bymu-text-primary: #141b38;
+	--bymu-text-secondary: #434960;
+	--bymu-text-muted: #8c8f9a;
+	
+	/* UI Colors */
+	--bymu-border: #dcdde1;
+	--bymu-background: #f9fafb;
+	--bymu-background-white: #ffffff;
+	
+	/* Shadows - Subtle */
+	--bymu-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+	--bymu-shadow-md: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+	
+	/* Border Radius */
+	--bymu-radius: 4px;
+	
+	/* Spacing - Reduced for compactness */
+	--bymu-spacing-xs: 8px;
+	--bymu-spacing-sm: 12px;
+	--bymu-spacing-md: 16px;
+	--bymu-spacing-lg: 20px;
+	--bymu-spacing-xl: 24px;
+	
+	/* Typography */
+	--bymu-font-size-sm: 12px;
+	--bymu-font-size-base: 16px;
+	--bymu-font-size-md: 17px;
+	--bymu-font-size-lg: 19px;
+	--bymu-font-size-xl: 24px;
+}
+
+body.bymu-admin-shell,
+body.bymu-admin-shell #wpbody,
+body.bymu-admin-shell #wpcontent {
+	background: var(--bymu-page-bg);
+}
+
+body.bymu-admin-shell #wpbody-content {
+	padding-bottom: 40px;
+}
+
+body.bymu-admin-shell #wpbody-content > .notice,
+body.bymu-admin-shell #wpbody-content > .updated,
+body.bymu-admin-shell #wpbody-content > .error {
+	margin: 16px 24px;
+}
+
+body.bymu-admin-shell #screen-meta,
+body.bymu-admin-shell .update-nag {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+body.bymu-admin-shell,
+body.bymu-admin-shell #wpbody,
+body.bymu-admin-shell #wpcontent {
+	background: var(--bymu-page-bg);
+}
+
+body.bymu-admin-shell #wpbody-content {
+	padding-bottom: 40px;
+}
+
+body.bymu-admin-shell #wpbody-content > .notice,
+body.bymu-admin-shell #wpbody-content > .updated,
+body.bymu-admin-shell #wpbody-content > .error {
+	margin: 16px 24px;
+}
+
+body.bymu-admin-shell #screen-meta,
+body.bymu-admin-shell .update-nag {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+/*
+█ 2. BASE STYLES
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-wrap {
+	margin: 0;
+	padding: 24px;
+	max-width: 1400px;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+	color: var(--bymu-text-primary);
+	font-size: var(--bymu-font-size-base);
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	background: transparent;
+}
+
+.wrap.bymu-wrap {
+	margin: 0 auto;
+}
+
+.bymu-wrap * {
+	box-sizing: border-box;
+}
+
+.bymu-wrap a {
+	color: var(--bymu-primary);
+	text-decoration: none;
+	transition: color 0.15s ease;
+}
+
+.bymu-wrap a:hover {
+	color: var(--bymu-primary-dark);
+}
+
+/* Ensure global hover color does not affect the plugin nav pills */
+.bymu-page-nav a:hover,
+.bymu-page-nav a:focus,
+.bymu-page-nav a:focus-visible {
+	color: #fff;
+}
+
+.bymu-page-nav {
+	display: flex;
+	gap: 10px;
+	margin: 0 0 var(--bymu-spacing-lg) 0;
+	flex-wrap: wrap;
+}
+
+.bymu-page-nav__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 18px;
+	border-radius: 999px;
+	border: 1px solid #dfe7f5;
+	background: #fff;
+	font-weight: 600;
+	color: var(--bymu-text-secondary);
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.bymu-page-nav__link:hover,
+.bymu-page-nav__link:focus,
+.bymu-page-nav__link:focus-visible {
+	border-color: var(--bymu-primary);
+	color: #fff;
+	background: var(--bymu-primary);
+	box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+}
+
+.bymu-page-nav__link.is-active {
+	background: var(--bymu-primary);
+	border-color: var(--bymu-primary);
+	color: #fff;
+	box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+}
+
+/*
+█ 3. HEADER - Clean & Professional
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-header {
+	background: var(--bymu-surface);
+	border: 1px solid var(--bymu-border);
+	padding: var(--bymu-spacing-lg);
+	margin-bottom: var(--bymu-spacing-lg);
+	border-radius: 18px;
+	box-shadow: var(--bymu-shadow-md);
+}
+
+.bymu-header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--bymu-spacing-md);
+}
+
+.bymu-header-title {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--bymu-spacing-sm);
+	flex-direction: column;
+}
+
+.bymu-header-icon {
+	font-size: 24px;
+	line-height: 1;
+}
+
+.bymu-header h1 {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1.25;
+	color: var(--bymu-text-primary);
+}
+
+.bymu-header-subtitle {
+	font-size: var(--bymu-font-size-md);
+	margin: 2px 0 0 0;
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-page-title {
+	font-size: 18px;
+	margin-top: var(--bymu-spacing-md);
+	margin-bottom: 0;
+	font-weight: 600;
+	color: var(--bymu-text-primary);
+}
+
+.bymu-page-subtitle {
+	margin: 0;
+	font-size: var(--bymu-font-size-base);
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-header-actions {
+	display: flex;
+	gap: var(--bymu-spacing-sm);
+	flex-wrap: wrap;
+}
+
+.bymu-hero-button {
+	min-width: 160px;
+	height: 40px;
+	font-weight: 600;
+	box-shadow: none;
+}
+
+.bymu-button-ghost {
+	background: transparent;
+	border: 1px solid var(--bymu-border);
+	color: var(--bymu-text-primary);
+}
+
+.bymu-button-ghost:hover {
+	background: var(--bymu-primary-light);
+	color: var(--bymu-primary);
+	border-color: var(--bymu-primary-light);
+}
+
+.bymu-mode-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: var(--bymu-primary-light);
+	color: var(--bymu-primary-dark);
+	padding: 6px 14px;
+	border-radius: 999px;
+	font-weight: 600;
+	font-size: var(--bymu-font-size-sm);
+}
+
+.bymu-mode-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--bymu-primary-dark);
+}
+
+.bymu-mode-label {
+	line-height: 1;
+}
+
+@media (max-width: 782px) {
+	.bymu-header-actions {
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.bymu-hero-button {
+		flex: 1 1 100%;
+		justify-content: center;
+	}
+}
+
+/*
+█ 4. CONTAINER & LAYOUT
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--bymu-spacing-md);
+}
+
+/* Two-column layout for larger screens */
+.bymu-two-column {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--bymu-spacing-md);
+}
+
+@media (max-width: 1280px) {
+	.bymu-two-column {
+		grid-template-columns: 1fr;
+	}
+}
+
+/*
+█ 5. SECTIONS & CARDS - Compact
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-section {
+	background: var(--bymu-surface);
+	border: 1px solid var(--bymu-border);
+	border-radius: 16px;
+	box-shadow: var(--bymu-shadow-sm);
+	margin-bottom: var(--bymu-spacing-lg);
+	overflow: hidden;
+}
+
+.bymu-section-wide {
+	max-width: 70%;
+}
+
+.bymu-section-header {
+	padding: var(--bymu-spacing-md) var(--bymu-spacing-lg);
+	border-bottom: 1px solid var(--bymu-border);
+	background: var(--bymu-background);
+}
+
+.bymu-section-header h2 {
+	font-size: var(--bymu-font-size-lg);
+	font-weight: 600;
+	margin: 0 0 4px 0;
+	color: var(--bymu-text-primary);
+	line-height: 1.3;
+}
+
+.bymu-section-header p {
+	margin: 0;
+	color: var(--bymu-text-secondary);
+	font-size: var(--bymu-font-size-base);
+	line-height: 1.4;
+}
+
+.bymu-section-body {
+	padding: var(--bymu-spacing-lg);
+}
+
+.bymu-export-layout {
+	width: 100%;
+}
+
+.bymu-export-layout .bymu-export-col {
+	width: 50%;
+	vertical-align: top;
+	padding-right: 24px;
+}
+
+.bymu-export-layout select {
+	min-width: 260px;
+}
+
+/* Export and Recent Jobs sections - same width */
+#bymu-export-section,
+#bymu-recent-jobs-section {
+	max-width: 70%;
+}
+
+.bymu-section-body .wp-list-table.widefat {
+	margin-top: var(--bymu-spacing-md);
+}
+
+/* Compact section variant */
+.bymu-section-compact .bymu-section-header {
+	padding: var(--bymu-spacing-sm) var(--bymu-spacing-md);
+}
+
+.bymu-section-compact .bymu-section-body {
+	padding: var(--bymu-spacing-md);
+}
+
+/*
+█ 6. FORM ELEMENTS - Compact & Clean
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-form-row {
+	display: flex;
+	gap: var(--bymu-spacing-md);
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: var(--bymu-spacing-md);
+}
+
+.bymu-form-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--bymu-spacing-xs);
+	flex: 1;
+	min-width: 200px;
+}
+
+.bymu-form-group label {
+	display: block;
+	font-weight: 600;
+	color: var(--bymu-text-primary);
+	font-size: var(--bymu-font-size-base);
+	margin: 0;
+}
+
+.bymu-form-group .description {
+	color: var(--bymu-text-secondary);
+	font-size: var(--bymu-font-size-sm);
+	margin: 0;
+	line-height: 1.4;
+}
+
+.bymu-select,
+.bymu-input {
+	padding: 7px 10px;
+	border: 1px solid var(--bymu-border);
+	border-radius: var(--bymu-radius);
+	font-size: var(--bymu-font-size-base);
+	transition: border-color 0.15s ease;
+	background: var(--bymu-background-white);
+}
+
+.bymu-select:focus,
+.bymu-input:focus {
+	border-color: var(--bymu-primary);
+	outline: none;
+	box-shadow: 0 0 0 1px var(--bymu-primary);
+}
+
+.bymu-select {
+	min-width: 240px;
+}
+
+/* WordPress Form Tables - More Compact */
+.bymu-wrap .form-table {
+	margin-top: 0;
+}
+
+.bymu-wrap .form-table th {
+	padding: 12px 10px 12px 0;
+	font-weight: 600;
+	vertical-align: top;
+	width: 220px;
+}
+
+.bymu-wrap .form-table td {
+	padding: 12px 10px;
+	vertical-align: top;
+}
+
+.bymu-wrap .form-table td p.description {
+	margin: 6px 0 0 0;
+	font-size: var(--bymu-font-size-sm);
+}
+
+/*
+█ 7. BUTTONS - Professional
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-wrap .button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 34px;
+	padding: 0 14px;
+	font-size: var(--bymu-font-size-base);
+	border-radius: var(--bymu-radius);
+	transition: all 0.15s ease;
+	line-height: 1.2;
+}
+
+.bymu-wrap .button-primary {
+	background: var(--bymu-primary);
+	border-color: var(--bymu-primary);
+}
+
+.bymu-wrap .button-primary:hover {
+	background: var(--bymu-primary-dark);
+	border-color: var(--bymu-primary-dark);
+}
+
+.bymu-wrap .button-large {
+	height: 38px;
+	padding: 0 18px;
+	font-size: var(--bymu-font-size-md);
+}
+
+.bymu-wrap .button-danger {
+	background: var(--bymu-error);
+	border-color: var(--bymu-error);
+	color: #fff;
+}
+
+.bymu-wrap .button-danger:hover {
+	background: #c72342;
+	border-color: #c72342;
+}
+
+.bymu-button-accent {
+	background: #ffbe55;
+	border-color: #e6a444;
+	color: #1d2327;
+}
+
+.bymu-button-accent:hover {
+	background: #f9ac2f;
+	border-color: #d89521;
+	color: #1d2327;
+}
+
+/*
+█ 8. AI GENERATION - Compact Table
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-ai-controls {
+	margin-bottom: var(--bymu-spacing-md);
+}
+
+.bymu-ai-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: var(--bymu-font-size-sm);
+	margin-top: var(--bymu-spacing-sm);
+}
+
+.bymu-ai-table th {
+	background: var(--bymu-background);
+	padding: 10px 8px;
+	text-align: left;
+	font-weight: 600;
+	color: var(--bymu-text-primary);
+	border-bottom: 2px solid var(--bymu-border);
+	font-size: var(--bymu-font-size-sm);
+	white-space: nowrap;
+}
+
+.bymu-ai-table td {
+	padding: 10px 8px;
+	border-bottom: 1px solid var(--bymu-border);
+	vertical-align: top;
+}
+
+.bymu-ai-table tbody tr:hover {
+	background: var(--bymu-background);
+}
+
+.bymu-ai-table input[type="text"],
+.bymu-ai-table textarea {
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid var(--bymu-border);
+	border-radius: var(--bymu-radius);
+	font-size: var(--bymu-font-size-sm);
+	font-family: inherit;
+}
+
+.bymu-ai-table textarea {
+	resize: vertical;
+	min-height: 50px;
+	line-height: 1.4;
+}
+
+.bymu-ai-table .button {
+	height: 28px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-size: var(--bymu-font-size-sm);
+	white-space: nowrap;
+}
+
+.bymu-ai-row-actions {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+}
+
+.bymu-ai-status {
+	font-size: var(--bymu-font-size-sm);
+	padding: 4px 0;
+	display: block;
+}
+
+/*
+█ 9. ALERTS & INFO BOXES - Compact
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-alert,
+.bymu-info-box {
+	padding: var(--bymu-spacing-md);
+	border-radius: var(--bymu-radius);
+	border-left: 3px solid;
+	margin-bottom: var(--bymu-spacing-md);
+	display: flex;
+	gap: var(--bymu-spacing-sm);
+	align-items: flex-start;
+}
+
+.bymu-alert-icon,
+.bymu-info-box-icon {
+	font-size: 20px;
+	line-height: 1;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+}
+
+.bymu-info-box-icon.dashicons,
+.bymu-alert-icon.dashicons {
+	font-size: 18px;
+	font-family: 'dashicons';
+}
+.bymu-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--bymu-spacing-sm);
+	margin-bottom: var(--bymu-spacing-sm);
+}
+
+.bymu-toolbar-split {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bymu-toolbar-left,
+.bymu-toolbar-right {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--bymu-spacing-sm);
+	align-items: center;
+}
+
+.bymu-bulk-alt-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 600;
+}
+
+.bymu-bulk-alt-label select {
+	min-width: 160px;
+}
+
+.bymu-bulk-alt-status {
+	font-size: 13px;
+	color: var(--bymu-text-muted);
+	min-height: 18px;
+}
+
+.bymu-bulk-alt-running {
+	outline: 2px solid rgba(34, 113, 177, 0.25);
+}
+
+.bymu-alert-content,
+.bymu-info-box-content {
+	flex: 1;
+}
+
+.bymu-alert-content p,
+.bymu-info-box-content p {
+	margin: 0 0 8px 0;
+	line-height: 1.5;
+}
+
+.bymu-alert-content p:last-child,
+.bymu-info-box-content p:last-child {
+	margin-bottom: 0;
+}
+
+.bymu-alert-content ul,
+.bymu-info-box-content ul {
+	margin: 8px 0 0 20px;
+	padding: 0;
+}
+
+.bymu-alert-content li,
+.bymu-info-box-content li {
+	margin-bottom: 4px;
+	line-height: 1.5;
+}
+
+/* Alert Types */
+.bymu-alert.info,
+.bymu-info-box {
+	background: #e8f4fd;
+	border-left-color: var(--bymu-info);
+	color: #004085;
+}
+
+.bymu-alert.success {
+	background: #d4edda;
+	border-left-color: var(--bymu-success);
+	color: #155724;
+}
+
+.bymu-alert.warning {
+	background: #fff3cd;
+	border-left-color: var(--bymu-warning);
+	color: #856404;
+}
+
+.bymu-alert.error {
+	background: #f8d7da;
+	border-left-color: var(--bymu-error);
+	color: #721c24;
+}
+
+/*
+█ 10. TABLES - Compact & Professional
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: var(--bymu-font-size-sm);
+	background: var(--bymu-background-white);
+}
+
+.bymu-table thead tr {
+	background: var(--bymu-background);
+	border-bottom: 2px solid var(--bymu-border);
+}
+
+.bymu-table th {
+	padding: 10px 12px;
+	text-align: left;
+	font-weight: 600;
+	color: var(--bymu-text-primary);
+	font-size: var(--bymu-font-size-sm);
+}
+
+.bymu-table td {
+	padding: 10px 12px;
+	border-bottom: 1px solid var(--bymu-border);
+	vertical-align: top;
+}
+
+.bymu-table tbody tr:hover {
+	background: var(--bymu-background);
+}
+
+.bymu-table .bymu-ai-row .bymu-ai-field {
+	width: 100%;
+	max-width: 100%;
+}
+
+.bymu-table .bymu-ai-row .bymu-ai-field[data-field="desc"] {
+	min-height: 90px;
+	resize: vertical;
+}
+
+.bymu-table .bymu-ai-row .bymu-ai-field {
+	font-size: var(--bymu-font-size-sm);
+}
+
+.bymu-table .bymu-ai-row .bymu-ai-char-count {
+	display: inline-block;
+	margin-top: 4px;
+}
+
+.bymu-settings-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+
+.bymu-settings-table {
+	background: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 18px 26px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	flex: 1 1 320px;
+}
+
+.bymu-settings-table:first-child {
+	border-right: 1px solid var(--bymu-border);
+}
+
+.bymu-settings-table h2 {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.bymu-alt-wrapper textarea {
+	width: 100%;
+}
+
+.bymu-inline-save-controls {
+	display: none;
+	margin-top: 12px;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bymu-inline-save-controls.is-visible {
+	display: flex;
+}
+
+.bymu-bulk-utility {
+	background: #fff;
+	border: 1px solid var(--bymu-border);
+	border-radius: 16px;
+	padding: 20px;
+	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.bymu-bulk-utility-header strong {
+	display: block;
+	font-size: 16px;
+}
+
+.bymu-bulk-utility-header p {
+	margin: 4px 0 0;
+	font-size: 13px;
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-bulk-step-grid {
+	display: flex;
+	gap: 18px;
+	align-items: stretch;
+	margin-top: 8px;
+}
+
+.bymu-bulk-step-grid .bymu-bulk-step {
+	flex: 1 1 0;
+}
+
+.bymu-bulk-step {
+	display: flex;
+	gap: 14px;
+	border: 1px solid var(--bymu-border);
+	border-radius: 14px;
+	padding: 16px 18px;
+	background: #f6f7fb;
+	align-items: flex-start;
+}
+
+.bymu-bulk-step-number {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: var(--bymu-primary);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.bymu-bulk-step-body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	min-height: 100%;
+}
+
+.bymu-bulk-step-title {
+	font-weight: 600;
+	font-size: 15px;
+	color: var(--bymu-text-primary);
+}
+
+.bymu-bulk-step-controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+
+.bymu-bulk-alt-label {
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-bulk-alt-label select {
+	min-width: 140px;
+	margin-top: 4px;
+}
+
+.bymu-bulk-alt-status {
+	font-size: 13px;
+	color: var(--bymu-text-muted);
+	min-height: 18px;
+}
+
+@media (max-width: 1100px) {
+	.bymu-bulk-step-grid {
+		flex-direction: column;
+	}
+}
+
+.bymu-image-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+}
+
+.bymu-image-preview {
+	width: 120px;
+	height: 120px;
+	border-radius: 14px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+	background: #f8fafc;
+}
+
+.bymu-image-preview img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.bymu-image-meta {
+	font-size: var(--bymu-font-size-sm);
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-image-meta strong {
+	display: block;
+	font-size: var(--bymu-font-size-base);
+	color: var(--bymu-text-primary);
+	margin-bottom: 4px;
+}
+
+.bymu-image-meta code {
+	display: inline-block;
+	background: #eef2ff;
+	color: var(--bymu-primary-dark);
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 12px;
+}
+
+.bymu-image-meta .description {
+	margin-top: 6px;
+	font-size: 12px;
+}
+
+.bymu-reference-count {
+	margin: 0 0 6px;
+	font-weight: 600;
+}
+
+.bymu-reference-list {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.bymu-reference-list li {
+	margin-bottom: 4px;
+}
+
+.bymu-reference-list li:last-child {
+	margin-bottom: 0;
+}
+
+.bymu-reference-list a {
+	text-decoration: none;
+}
+
+.bymu-reference-list a:hover {
+	text-decoration: underline;
+}
+
+.column-actions .button {
+	margin-bottom: 4px;
+}
+
+#bymu-ai-generate-all.button {
+	background: #ffbe55;
+	border-color: #e6a444;
+	color: #1d2327;
+}
+
+#bymu-ai-generate-all.button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.bymu-table-actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+/*
+█ 11. BADGES & STATUS
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: var(--bymu-font-size-sm);
+	font-weight: 500;
+	line-height: 1.3;
+	white-space: nowrap;
+}
+
+.bymu-badge-success {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bymu-badge-warning {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bymu-badge-error {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bymu-badge-info {
+	background: #e8f4fd;
+	color: #004085;
+}
+
+/*
+█ 12. TABS - Clean
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-tabs {
+	display: flex;
+	gap: 0;
+	border-bottom: 1px solid var(--bymu-border);
+	margin-bottom: var(--bymu-spacing-md);
+}
+
+.bymu-tab {
+	padding: 12px 20px;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid transparent;
+	color: var(--bymu-text-secondary);
+	font-size: var(--bymu-font-size-md);
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	text-decoration: none;
+}
+
+.bymu-tab:hover {
+	color: var(--bymu-text-primary);
+	background: var(--bymu-background);
+}
+
+.bymu-tab.active {
+	color: var(--bymu-primary);
+	border-bottom-color: var(--bymu-primary);
+	background: transparent;
+}
+
+/*
+█ 13. PROGRESS & LOADING
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-progress-container {
+	background: var(--bymu-background);
+	border-radius: var(--bymu-radius);
+	height: 24px;
+	overflow: hidden;
+	margin: var(--bymu-spacing-sm) 0;
+	position: relative;
+	border: 1px solid var(--bymu-border);
+}
+
+.bymu-progress-bar {
+	height: 100%;
+	background: linear-gradient(90deg, var(--bymu-primary), var(--bymu-secondary));
+	transition: width 0.4s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: var(--bymu-font-size-sm);
+	font-weight: 500;
+}
+
+.bymu-spinner {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid var(--bymu-border);
+	border-top-color: var(--bymu-primary);
+	border-radius: 50%;
+	animation: bymu-spin 0.6s linear infinite;
+}
+
+@keyframes bymu-spin {
+	to { transform: rotate(360deg); }
+}
+
+/*
+█ 14. CSV UPLOAD - Compact
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-upload-area {
+	border: 2px dashed var(--bymu-border);
+	border-radius: var(--bymu-radius);
+	padding: var(--bymu-spacing-lg);
+	text-align: center;
+	transition: all 0.15s ease;
+	cursor: pointer;
+	background: var(--bymu-background);
+}
+
+.bymu-upload-area:hover {
+	border-color: var(--bymu-primary);
+	background: #f0f6ff;
+}
+
+.bymu-upload-area.dragging {
+	border-color: var(--bymu-primary);
+	border-width: 3px;
+	background: #e8f4fd;
+	transform: scale(1.02);
+}
+
+.bymu-upload-icon {
+	font-size: 32px;
+	margin-bottom: var(--bymu-spacing-sm);
+}
+
+.bymu-upload-text {
+	font-size: var(--bymu-font-size-md);
+	color: var(--bymu-text-primary);
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.bymu-upload-or {
+	font-size: var(--bymu-font-size-sm);
+	color: var(--bymu-text-secondary);
+	margin: 8px 0;
+	font-style: italic;
+}
+
+.bymu-upload-area .button {
+	margin-top: 8px;
+	pointer-events: all;
+}
+
+.bymu-upload-hint {
+	font-size: var(--bymu-font-size-sm);
+	color: var(--bymu-text-secondary);
+	margin-top: 4px;
+}
+
+.bymu-file-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--bymu-spacing-sm);
+	background: var(--bymu-background);
+	border: 1px solid var(--bymu-border);
+	border-radius: var(--bymu-radius);
+	margin-top: var(--bymu-spacing-sm);
+}
+
+.bymu-file-name {
+	font-weight: 500;
+	color: var(--bymu-text-primary);
+	font-size: var(--bymu-font-size-base);
+}
+
+/*
+█ 15. STATS & METRICS - Compact Grid
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--bymu-spacing-md);
+	margin-bottom: var(--bymu-spacing-md);
+}
+
+@media (max-width: 782px) {
+	.bymu-stats-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.bymu-stat-card {
+	background: var(--bymu-background-white);
+	border: 1px solid var(--bymu-border);
+	border-radius: var(--bymu-radius);
+	padding: var(--bymu-spacing-md);
+	text-align: left;
+}
+
+.bymu-quick-link {
+	display: block;
+	padding: 14px 16px;
+	border: 1px solid var(--bymu-border);
+	border-radius: var(--bymu-radius);
+	background: var(--bymu-background);
+	font-weight: 600;
+	font-size: var(--bymu-font-size-md);
+	color: var(--bymu-text-primary);
+	text-decoration: none;
+	transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.bymu-quick-link:hover,
+.bymu-quick-link:focus {
+	border-color: var(--bymu-primary);
+	background: var(--bymu-background-white);
+	color: var(--bymu-primary);
+	text-decoration: none;
+}
+
+.bymu-quick-description {
+	margin: 10px 0 0;
+	font-size: var(--bymu-font-size-sm);
+	color: var(--bymu-text-secondary);
+	line-height: 1.5;
+}
+
+.bymu-stat-value {
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--bymu-primary);
+	line-height: 1.2;
+	margin-bottom: 4px;
+}
+
+.bymu-stat-label {
+	font-size: var(--bymu-font-size-sm);
+	color: var(--bymu-text-secondary);
+	font-weight: 500;
+}
+
+/*
+█ 16. DOCUMENTATION - Two-Column Layout
+████████████████████████████████████████████████████████████
+*/
+
+/* Documentation Layout */
+.bymu-doc-layout {
+	display: grid;
+	grid-template-columns: 1fr 280px;
+	gap: var(--bymu-spacing-xl);
+	align-items: start;
+}
+
+.bymu-doc-content {
+	min-width: 0;
+	line-height: 1.6;
+}
+
+.bymu-doc-sidebar {
+	position: sticky;
+	top: 32px;
+	max-height: calc(100vh - 64px);
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/* Custom scrollbar for TOC sidebar */
+.bymu-doc-sidebar::-webkit-scrollbar {
+	width: 6px;
+}
+
+.bymu-doc-sidebar::-webkit-scrollbar-track {
+	background: var(--bymu-background);
+	border-radius: 3px;
+}
+
+.bymu-doc-sidebar::-webkit-scrollbar-thumb {
+	background: var(--bymu-border);
+	border-radius: 3px;
+}
+
+.bymu-doc-sidebar::-webkit-scrollbar-thumb:hover {
+	background: var(--bymu-text-muted);
+}
+
+/* Table of Contents - Sticky Sidebar */
+.bymu-doc-toc {
+	background: var(--bymu-background-white);
+	border: 1px solid var(--bymu-border);
+	border-left: 3px solid var(--bymu-primary);
+	border-radius: var(--bymu-radius);
+	padding: var(--bymu-spacing-md);
+}
+
+.bymu-doc-toc-title {
+	font-size: var(--bymu-font-size-md);
+	font-weight: 600;
+	margin: 0 0 var(--bymu-spacing-sm) 0;
+	color: var(--bymu-text-primary);
+}
+
+.bymu-doc-toc-nav {
+	display: block;
+}
+
+.bymu-doc-toc-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bymu-doc-toc-list li {
+	margin: 0;
+	padding: 0;
+}
+
+.bymu-doc-toc-list a {
+	color: var(--bymu-text-secondary);
+	text-decoration: none;
+	display: block;
+	padding: 8px 12px;
+	border-radius: var(--bymu-radius);
+	transition: all 0.15s ease;
+	line-height: 1.4;
+	font-size: var(--bymu-font-size-sm);
+	border-left: 3px solid transparent;
+	margin-left: -12px;
+	padding-left: 9px;
+}
+
+.bymu-doc-toc-list a:hover {
+	color: var(--bymu-primary);
+	background: var(--bymu-background);
+}
+
+.bymu-doc-toc-list a.active {
+	color: var(--bymu-primary);
+	font-weight: 600;
+	border-left-color: var(--bymu-primary);
+	background: rgba(0, 90, 224, 0.05);
+}
+
+/* Responsive - Stack on smaller screens */
+@media (max-width: 1100px) {
+	.bymu-doc-layout {
+		grid-template-columns: 1fr;
+	}
+	
+	.bymu-doc-sidebar {
+		position: static;
+		max-height: none;
+		order: -1;
+	}
+	
+	.bymu-doc-toc {
+		margin-bottom: var(--bymu-spacing-lg);
+	}
+}
+
+/* Documentation Content */
+.bymu-doc-content h1 {
+	font-size: 24px;
+	margin: 0 0 var(--bymu-spacing-md) 0;
+	color: var(--bymu-text-primary);
+	border-bottom: 2px solid var(--bymu-border);
+	padding-bottom: var(--bymu-spacing-sm);
+	scroll-margin-top: 50px;
+}
+
+.bymu-doc-content h2 {
+	font-size: 20px;
+	margin: var(--bymu-spacing-xl) 0 var(--bymu-spacing-sm) 0;
+	color: var(--bymu-text-primary);
+	padding-top: var(--bymu-spacing-sm);
+	border-top: 1px solid var(--bymu-border);
+	scroll-margin-top: 50px;
+}
+
+.bymu-doc-content h3 {
+	font-size: 16px;
+	margin: var(--bymu-spacing-md) 0 var(--bymu-spacing-xs) 0;
+	color: var(--bymu-text-primary);
+	scroll-margin-top: 50px;
+}
+
+.bymu-doc-content p {
+	margin: 0 0 var(--bymu-spacing-sm) 0;
+	line-height: 1.6;
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-doc-content ul,
+.bymu-doc-content ol {
+	margin: var(--bymu-spacing-sm) 0;
+	padding-left: 24px;
+	line-height: 1.6;
+}
+
+.bymu-doc-content li {
+	margin-bottom: 6px;
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-doc-content a {
+	color: var(--bymu-primary);
+	text-decoration: underline;
+}
+
+.bymu-doc-content a:hover {
+	color: var(--bymu-primary-dark);
+}
+
+.bymu-doc-content strong {
+	font-weight: 600;
+	color: var(--bymu-text-primary);
+}
+
+.bymu-doc-content code {
+	background: var(--bymu-background);
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: var(--bymu-font-size-sm);
+	font-family: 'Courier New', 'Monaco', monospace;
+	border: 1px solid var(--bymu-border);
+	color: #c7254e;
+}
+
+.bymu-doc-content pre {
+	background: #f5f5f5;
+	padding: var(--bymu-spacing-md);
+	border-radius: var(--bymu-radius);
+	overflow-x: auto;
+	border: 1px solid var(--bymu-border);
+	margin: var(--bymu-spacing-md) 0;
+	line-height: 1.5;
+}
+
+.bymu-doc-content pre code {
+	background: none;
+	padding: 0;
+	border: none;
+	color: var(--bymu-text-primary);
+	font-size: var(--bymu-font-size-sm);
+}
+
+.bymu-doc-content hr {
+	border: none;
+	border-top: 1px solid var(--bymu-border);
+	margin: var(--bymu-spacing-lg) 0;
+}
+
+/* Documentation Tables */
+.bymu-doc-content table,
+.bymu-doc-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: var(--bymu-spacing-md) 0;
+	font-size: var(--bymu-font-size-sm);
+}
+
+.bymu-doc-content table th,
+.bymu-doc-table th {
+	background: var(--bymu-background);
+	padding: 10px 12px;
+	text-align: left;
+	font-weight: 600;
+	color: var(--bymu-text-primary);
+	border: 1px solid var(--bymu-border);
+}
+
+.bymu-doc-content table td,
+.bymu-doc-table td {
+	padding: 10px 12px;
+	border: 1px solid var(--bymu-border);
+	color: var(--bymu-text-secondary);
+}
+
+.bymu-doc-content table tbody tr:hover,
+.bymu-doc-table tbody tr:hover {
+	background: var(--bymu-background);
+}
+
+/*
+█ 17. MODAL - Log Viewer
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	display: none;
+}
+
+.bymu-modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+}
+
+.bymu-modal-container {
+	position: relative;
+	max-width: 900px;
+	margin: 40px auto;
+	background: var(--bymu-background-white);
+	border-radius: var(--bymu-radius);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	max-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+}
+
+.bymu-modal-header {
+	padding: var(--bymu-spacing-lg);
+	border-bottom: 1px solid var(--bymu-border);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--bymu-background);
+}
+
+.bymu-modal-header h2 {
+	margin: 0;
+	font-size: var(--bymu-font-size-lg);
+	color: var(--bymu-text-primary);
+	font-weight: 600;
+}
+
+.bymu-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 4px;
+	color: var(--bymu-text-secondary);
+	transition: color 0.15s ease;
+}
+
+.bymu-modal-close:hover {
+	color: var(--bymu-text-primary);
+}
+
+.bymu-modal-body {
+	padding: var(--bymu-spacing-lg);
+	overflow-y: auto;
+	flex: 1;
+}
+
+.bymu-modal-footer {
+	padding: var(--bymu-spacing-md) var(--bymu-spacing-lg);
+	border-top: 1px solid var(--bymu-border);
+	text-align: right;
+	background: var(--bymu-background);
+}
+
+#bymu-log-content {
+	background: #f5f5f5;
+	padding: var(--bymu-spacing-lg);
+	border-radius: var(--bymu-radius);
+	overflow-x: auto;
+	max-height: 500px;
+	font-family: 'Courier New', Monaco, monospace;
+	font-size: 13px;
+	line-height: 1.6;
+	color: var(--bymu-text-primary);
+	border: 1px solid var(--bymu-border);
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 0;
+}
+
+@media screen and (max-width: 782px) {
+	.bymu-modal-container {
+		margin: 20px;
+		max-height: calc(100vh - 40px);
+	}
+	
+	.bymu-modal-header,
+	.bymu-modal-body,
+	.bymu-modal-footer {
+		padding: var(--bymu-spacing-md);
+	}
+	
+	#bymu-log-content {
+		font-size: 11px;
+		padding: var(--bymu-spacing-sm);
+	}
+}
+
+/*
+█ 18. IMAGE ALT TEXT GENERATION
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-image-alt-generate {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 8px;
+}
+
+.bymu-inline-generate-alt-btn,
+.bymu-media-generate-alt-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: var(--bymu-font-size-sm);
+	font-weight: 500;
+	padding: 6px 12px;
+	height: auto;
+	line-height: 1.4;
+	border-radius: var(--bymu-radius);
+	transition: all 0.15s ease;
+	background: var(--bymu-primary);
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.bymu-inline-generate-alt-btn:hover,
+.bymu-media-generate-alt-btn:hover {
+	background: var(--bymu-primary-dark);
+}
+
+.bymu-inline-generate-alt-btn:disabled,
+.bymu-media-generate-alt-btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.bymu-alt-status {
+	display: inline-block;
+	font-size: var(--bymu-font-size-sm);
+	font-weight: 500;
+}
+
+/*
+█ 18. UTILITIES
+████████████████████████████████████████████████████████████
+*/
+
+.bymu-text-center {
+	text-align: center;
+}
+
+.bymu-text-right {
+	text-align: right;
+}
+
+.bymu-mt-0 { margin-top: 0; }
+.bymu-mt-sm { margin-top: var(--bymu-spacing-sm); }
+.bymu-mt-md { margin-top: var(--bymu-spacing-md); }
+.bymu-mt-lg { margin-top: var(--bymu-spacing-lg); }
+
+.bymu-mb-0 { margin-bottom: 0; }
+.bymu-mb-sm { margin-bottom: var(--bymu-spacing-sm); }
+.bymu-mb-md { margin-bottom: var(--bymu-spacing-md); }
+.bymu-mb-lg { margin-bottom: var(--bymu-spacing-lg); }
+
+.bymu-hidden {
+	display: none;
+}
+
+/*
+█ 19. RESPONSIVE
+████████████████████████████████████████████████████████████
+*/
+
+@media screen and (max-width: 782px) {
+	.bymu-wrap {
+		margin: 10px 10px 20px 0;
+	}
+	
+	.bymu-header {
+		padding: var(--bymu-spacing-sm) var(--bymu-spacing-md);
+	}
+	
+	.bymu-header h1 {
+		font-size: var(--bymu-font-size-lg);
+	}
+	
+	.bymu-section-header {
+		padding: var(--bymu-spacing-sm) var(--bymu-spacing-md);
+	}
+	
+	.bymu-section-body {
+		padding: var(--bymu-spacing-md);
+	}
+	
+	.bymu-form-row {
+		flex-direction: column;
+	}
+	
+	.bymu-stats-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.bymu-ai-table {
+		font-size: 11px;
+	}
+	
+	.bymu-ai-table th,
+	.bymu-ai-table td {
+		padding: 8px 6px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bymu-wrap *,
+	.bymu-wrap *::before,
+	.bymu-wrap *::after {
+		animation-duration: 0.01ms;
+		animation-iteration-count: 1;
+		transition-duration: 0.01ms;
+	}
+}
+
+/*
+█ END OF STYLESHEET
+████████████████████████████████████████████████████████████
+*/

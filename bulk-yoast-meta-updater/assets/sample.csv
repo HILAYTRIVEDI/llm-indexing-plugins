@@ -1,0 +1,7 @@
+post_id,url,meta_title,meta_description,focus_keyword,post_title,post_type,post_status
+123,,New Title for Post 123,This is a sample meta description for the post.,voip crm integration,VoIP CRM Integration Guide,post,publish
+,https://example.com/pricing,Pricing Plans & Costs,Compare our pricing plans and find the right fit for your business.,pricing plans,Pricing,page,publish
+456,,,Updated focus keyword only for this post,contact center software,Contact Center Software Review,post,publish
+789,,Title Update Only for Post 789,,,Customer Success Stories,page,publish
+,https://example.com/about,About Us - Company Overview,Learn about our mission and the team behind our success.,about us,About Our Company,page,publish
+

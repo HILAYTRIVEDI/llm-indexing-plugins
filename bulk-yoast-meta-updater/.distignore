@@ -1,0 +1,71 @@
+# Exclude development files from distribution
+.git
+.gitignore
+.gitattributes
+.distignore
+.editorconfig
+.eslintrc
+.eslintignore
+.phpcs.xml
+.phpcs.xml.dist
+phpcs.xml
+phpcs-report*.txt
+phpcs-detailed.txt
+
+# Development tools
+node_modules
+.sass-cache
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+tests
+.phpunit.result.cache
+phpunit.xml
+phpunit.xml.dist
+bin
+.travis.yml
+circle.yml
+.circleci
+
+# Build files
+build
+dist
+*.zip
+
+# Documentation (keep README.md and readme.txt)
+AUDIT-REPORT.md
+DEPLOYMENT-CHECKLIST.md
+.github
+
+# Composer
+composer.json
+composer.lock
+vendor
+
+# NPM
+package.json
+package-lock.json
+yarn.lock
+Gruntfile.js
+Gulpfile.js
+webpack.config.js
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.swp
+*.swo
+*~
