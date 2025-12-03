@@ -684,13 +684,11 @@ final class MD_LLMs_Txt_Manager
             $name = isset($block['blockName']) ? (string) $block['blockName'] : '';
 
             if (self::BLOCK_NAME === $name ) {
-                $attrs    = isset($block['attrs']) && is_array($block['attrs']) ? $block['attrs'] : array();
-                $content  = isset($attrs['content']) ? (string) $attrs['content'] : '';
-                $content  = $this->apply_merge_fields($content);
-                $sanitary = $this->sanitize_comment_fragment($content);
+                $attrs   = isset($block['attrs']) && is_array($block['attrs']) ? $block['attrs'] : array();
+                $content = isset($attrs['content']) ? (string) $attrs['content'] : '';
 
-                if ('' !== $sanitary ) {
-                    $snippets[] = $sanitary;
+                if ('' !== $content ) {
+                    $snippets[] = $content;
                 }
             }
 
